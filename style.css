@@ -362,6 +362,7 @@ section  > h2 {
 .mediabat_card {
     display: flex;
     justify-content: space-around;
+    margin-bottom:  2em;
 }
 
 .media > button {
