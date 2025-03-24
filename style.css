@@ -1,0 +1,347 @@
+/* Main BATMAN style  */
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth ;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: underline;
+    color: var(--gray-color);
+}
+
+
+
+/* End Reset */
+
+/* Global Styles */
+
+/* variables  */
+:root {
+    --yellow-color : #FFFF00;
+    --yellow-color-light : #F8F184;
+    --navy-color : #19587D;
+    --red-color : #B11313;
+    --black_color : #0D0E09;
+    --gradiant-gray-color : #EDDEBF ;
+    --gradiant-gray-color-light : #19587D;
+    --gradiant-red-color : #EDDEBF;
+    --gradiant-red-color-light : #b11313;
+    --gray-color : #c4c4c4;
+    --black-full-color : #0000;
+    --white-full-color : #FFFFf;
+}
+
+
+/* fonts style  */
+
+/* Rajdhani  */
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* Space Grotesk     */
+.space-grotesk-light {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.space-grotesk-regular {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-grotesk-medium {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.space-grotesk-semibold {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.space-grotesk-bold {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-grotesk-black {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* End Global Styles  */
+
+
+/* Body  Content style */
+
+/* Header style */
+
+.batman_header_container {
+    width: 100dvw;    
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    background-color: var(--navy-color);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-image: url(Assets/Illustrations/Bathome1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.batman_nav {
+    top: 0;
+    min-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin-bottom: 2em;
+
+    /* background-color: blue; */
+} 
+
+.batman_hero {
+    max-width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    /* background-color: #19587D; */
+
+}
+
+.intro {
+    width:  60%;
+    padding: 2em;
+    margin-bottom: 2em;
+    line-height:  1.5em;
+
+
+    /* background-color: #b11313; */
+}
+
+.intro_paragraph {
+    color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.batman_hero_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.batman_hero_buttons > button {
+    padding: 1em;
+    width: 10rem;
+    border: none;
+    opacity: 0.8;
+    /* mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); */
+
+    cursor: pointer;
+    
+}
+
+.aside {
+    position: absolute;
+    right: 20px;  
+    top: 60%;  
+    transform: translateY(-50%); 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em;
+
+  }
+
+  .fa-brands {
+    padding: 1em;
+    margin-bottom:  2em;
+
+    color: var(--gray-color);
+    
+  }
+
+/* Header style End  */
+  
+/* Main style  */
+
+.batman_main_container {
+    width: 100dvw;    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    color:  var(--gray-color);
+
+
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--black_color);
+}
+
+.division_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:  2em;
+
+}
+
+section  > h2 {
+    text-transform: capitalize;
+    margin-bottom: 2em;
+    padding:  1em;
+}
+
+.batman_cinema,
+.batman_nemesis,
+.batman_allies,
+.allies_of_justice {
+    width:  60%;
+    margin:  0 auto;
+
+}
+
+.cinema_description {
+    line-height:  1.5em;
+    margin-bottom: 2em;
+
+}
+
+.cinema_description > p {
+    margin-bottom: 2em;
+
+}
+
+.batman_character,
+.nemesis_character,
+.allies_character {
+    width:  50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.chara_card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:  2em;
+}
+
+.batman_nemesis > h2 {
+    background-image: url(Assets/Illustrations/Bathome13.png);
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position-x:  5em;
+    /* background-position-y:  1rem; */
+
+
+}
+
+.batman_allies > h2 {
+    text-transform: capitalize;
+}
+
+.justice_leagie_card {
+    position: absolute;
+    background-image: url(Assets/Illustrations/Bathome11.png);
+}
+
+.allies_of_justice > .cinema_description > img {
+    width:  100%;
+    height: auto;
+    margin-bottom: 2em;
+
+}
+
+
+
+/* Main style End  */
+
+/* Footer style */
+
+/* Footer style End  */
+
