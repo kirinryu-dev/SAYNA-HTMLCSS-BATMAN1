@@ -31,14 +31,15 @@ a:visited {
     --yellow-color-light : #F8F184;
     --navy-color : #19587D;
     --red-color : #B11313;
-    --black_color : #0D0E09;
+    --black_color : #272525;
     --gradiant-gray-color : #EDDEBF ;
     --gradiant-gray-color-light : #19587D;
     --gradiant-red-color : #EDDEBF;
     --gradiant-red-color-light : #b11313;
     --gray-color : #c4c4c4;
-    --black-full-color : #0000;
-    --white-full-color : #FFFFf;
+    --black-full-color : #00000000;
+    --gray-black : #474747;
+    --white-full-color : #ffffff;
 }
 
 
@@ -135,7 +136,6 @@ a:visited {
     flex-direction: column;
     padding: 1rem 2rem;
     margin: 0 auto;
-    background-color: var(--navy-color);
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -246,7 +246,7 @@ a:visited {
     flex-direction: column;
     padding: 1rem 2rem;
     margin: 0 auto;
-    color:  var(--gray-color);
+    color:  var(--white-full-color);
 
 
     background-image: none;
@@ -272,7 +272,8 @@ section  > h2 {
 .batman_cinema,
 .batman_nemesis,
 .batman_allies,
-.allies_of_justice {
+.allies_of_justice ,
+.Multimedia {
     width:  60%;
     margin:  0 auto;
 
@@ -334,8 +335,63 @@ section  > h2 {
     width:  100%;
     height: auto;
     margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
+
+.allies_of_justice > h2 {
+    text-transform: capitalize;
+
+}
+
+.Multimedia > h2 {
+    text-transform: capitalize;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content:  space-around;
+    gap: 2em;
+
+}
+
+.mediabat_card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.media > button {
+    padding: 2em;
+    border: none;
+    background-color: var(--black-full-color);
+    cursor: pointer;
+}
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+    margin:  0.5em 2em;
+    padding: 0.5em;
+
+    background-color: var(--gray-black);
+}
+
+span {
+    color: var(--white-full-color);
+
+}
+
+span > .notation {
+    color: var(--yellow-color);
+}
+
 
 
 
