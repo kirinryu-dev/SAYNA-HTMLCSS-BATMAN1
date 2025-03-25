@@ -21,6 +21,16 @@ a:visited {
 
 
 
+h1,
+h2,
+h3 {
+    padding: 1em;
+    color: var(--white-full-color);
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+
 /* End Reset */
 
 /* Global Styles */
@@ -35,11 +45,15 @@ a:visited {
     --gradiant-gray-color : #EDDEBF ;
     --gradiant-gray-color-light : #19587D;
     --gradiant-red-color : #EDDEBF;
-    --gradiant-red-color-light : #b11313;
     --gray-color : #c4c4c4;
     --black-full-color : #00000000;
     --gray-black : #474747;
     --white-full-color : #ffffff;
+
+    /* gradiant  */
+    --button-gradient_color: linear-gradient(to right, rgba(255, 255, 255, 0.3), #650000);
+    --button-hover-gradient: linear-gradient(to right, rgba(255, 255, 255, 0.5), #850000);
+    --citation-gradient: linear-gradient(to bottom, #5a5a5a, #1a2a3a);
 }
 
 
@@ -252,7 +266,7 @@ a:visited {
     background-image: none;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--black_color);
+    background-color: black;
 }
 
 .division_icon {
@@ -261,12 +275,6 @@ a:visited {
     align-items: center;
     margin-bottom:  2em;
 
-}
-
-section  > h2 {
-    text-transform: capitalize;
-    margin-bottom: 2em;
-    padding:  1em;
 }
 
 .batman_cinema,
@@ -322,9 +330,6 @@ section  > h2 {
 
 }
 
-.batman_allies > h2 {
-    text-transform: capitalize;
-}
 
 .justice_leagie_card {
     position: absolute;
@@ -342,13 +347,9 @@ section  > h2 {
 
 }
 
-.allies_of_justice > h2 {
-    text-transform: capitalize;
 
-}
-
-.Multimedia > h2 {
-    text-transform: capitalize;
+.Multimedia {
+    margin-bottom: 5em;
 }
 
 .media {
@@ -393,12 +394,199 @@ span > .notation {
     color: var(--yellow-color);
 }
 
+/* Contact style  */
+
+.batman_contact {
+    width: 100%;
+    padding: 2em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+
+    background-color: var(--black_color);
+}
+
+form {
+    width: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.email,
+.accordion,
+.message {
+    all: unset;
+    border-bottom: 2px solid var(--white-full-color);
+    padding: 1em;
+    width: 100%;
+    background-color: var(--black-full-color);
+    color: var(--white-full-color);
+}
+
+.email,
+.accordion,
+.message :focus {
+    border-bottom: 2px solid var(--gray-color);
+    outline: none;
+
+}
+
+form > span {
+    color: var(--gray-color);
+
+}
+
+form > .newsletter {
+    background-color: var(--gray-color);
+    color: var(--gradiant-gray-color);
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.news > button {
+    padding: 1em;
+    cursor: pointer;
+    background-color: var(--black_color);
+    border: 1px solid var(--gradiant-red-color-light);
+    padding: 1em;
+    color: var(--white-full-color);
+
+}
+
+.confirmer {
+    padding: 2em;
+    background-color: var(--button-gradient_colort);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border:  none;
+
+    cursor: pointer;
+}
+
+/* Citation  */
+
+ .batman_citation {
+    position: relative;
+    text-align: center;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .citation-icon {
+    font-size: 120px;
+    font-weight: bold;
+    position: absolute;
+    /* opacity: 0.3; */
+
+    /* background: var(--gray-black); */
+  }
+  
+  .left {
+    left: 10%;
+    top: 30%;
+  }
+  
+  .right {
+    right: 10%;
+    bottom: 20%;
+  }
+  
+  .citation-text {
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 60%;
+  }
+  
+  .citation-author {
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+  
+  .page_button {
+    margin-top: 20px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: var(--gradiant-gray-color-light);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dot.active {
+    background-color: var(--gray-color);
+  }
+  
 
 
 
 /* Main style End  */
 
 /* Footer style */
+
+.batman_footer_container {
+    width: 100dvw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+
+    background-color: black;
+}
+
+.batman_copy {
+    padding: 2em;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.company {
+    padding: 2em;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.group1 ,
+.group2{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    /* background-color:  blue; */
+}
+
 
 /* Footer style End  */
 

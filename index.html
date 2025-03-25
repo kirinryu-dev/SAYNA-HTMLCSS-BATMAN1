@@ -74,7 +74,7 @@
 
         <!-- batman character - and actor  -->
         <section class="batman_cinema">
-            <h2>batman au cinema</h2>
+            <h2 class="  rajdhani-regular">batman au cinema</h2>
             <div class="cinema_description">
                 <p>
                     Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
@@ -104,7 +104,7 @@
 
                 <!-- batman enemys - and actor  -->
                 <section class="batman_nemesis">
-                    <h2>Nemesis</h2>
+                    <h2 class="rajdhani-regular">Nemesis</h2>
                     <div class="cinema_description">
                         <p>
                             Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
@@ -136,7 +136,7 @@
 
                         <!-- batman character - and actor  -->
         <section class="batman_allies">
-            <h2>Allies</h2>
+            <h2 class="rajdhani-regular">Allies</h2>
             <div class="cinema_description">
                 <p>
                     Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce
@@ -166,7 +166,7 @@
         </section>
 
         <section class="allies_of_justice">
-            <h2>Justice league</h2>
+            <h2 class="rajdhani-regular">Justice league</h2>
             <div class="cinema_description">
                 <p>
                     Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils
@@ -181,7 +181,7 @@
         </section>
 
         <section class="Multimedia">
-            <h2>Multimedia</h2>
+            <h2 class="rajdhani-regular">Multimedia</h2>
             <div class="media">
                 <button>
                     <img src="Assets/Logos/icon_flèche_1.png" alt="" srcset="">
@@ -210,6 +210,56 @@
             <img src="Assets/Illustrations/Bathome_ba2.png" alt="" srcset="">
         </section>
 
+        <section class="batman_contact">
+            <h2 class="rajdhani-regular">
+                Prenons contact
+            </h2>
+
+            <form action="POST">
+                <label for="">ADRESSE MAIL</label>
+                <input type="email" placeholder="Votre adresse mail" class="email">
+                <label for="">NEWSLETTER</label>
+                <span>En cochant cette case vous acceptez de recevoir l’actualité concernant les
+                    aventures de Batman</span>
+                <input type="checkbox" name="newsletter" id="newsletter" class="newsletter">
+                <label for="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</label>
+                <input type="accordion" value="" class="accordion">
+                <label for="">Souhaitez vous recevoir des news </label>
+                <input type="accordion" value="" class="accordion">
+                <div class="news">
+                    <button>Des Films</button>
+                    <button>Des Comics</button>
+                    <button>De Tout</button>
+                </div>
+                <label for="">Message</label>
+                <input type="text" placeholder="laissez un commentaire pour la communaute" class="message">
+                <button class="confirmer">CONFIRMER</button>
+
+            </form>
+
+        </section>
+
+        <section class="batman_citation">
+            <div class="citation-icon left">
+                <img src="Assets/Logos/icon_guillemets_1.png" alt="" srcset="">
+            </div>
+            <blockquote class="citation-text">
+              La seule façon raisonnable de vivre en ce bas monde, c’est en dehors des règles.
+            </blockquote>
+            <p class="citattion-author">The Dark Knight : Le Chevalier Noir -<br> Le Joker à Batman (2008)</p>
+            <div class="citation-icon right">
+                <img src="Assets/Logos/icon_guillemets_2.png" alt="" srcset="">
+            </div>
+            <div class="page_button">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </section>
+          
+
 
 
 
@@ -217,9 +267,29 @@
      </main>
 
      <!-- here is the footer  -->
-      <footer>
+      <footer class="batman_footer_container">
 
+        <div class="batman_copy">
+            <!-- <p>© 2023 BATMAN. Tous droits réservés.</p> -->
+             <img src="Assets/Logos/icon_WB.png" alt="">
+             <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
+        </div>
 
+        <div class="company">
+            <!-- <p>Créé par <a href="http://">DC Comics</a></p> -->
+
+            <div class="group1">
+                <img src="Assets/Logos/logo_sayna_white.png" alt="SAYNA">
+                <img src="Assets/Logos/icon_x.png" alt="colab" srcset="">
+                <img src="Assets/Logos/icon_WB.png" alt="Warner bros" srcset="">
+            </div>
+
+            <div class="group2">
+                <img src="Assets/Logos/icon_facebook.png" alt="facebook" srcset="">
+                <img src="Assets/Logos/icon_ig.png" alt="instagram" srcset="">
+                <img src="Assets/Logos/icon_tw.png" alt="tweeter or X">
+            </span>
+        </div>
       </footer>
     
 </body>
